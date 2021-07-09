@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+    <meta charset="utf-8"/>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style1.css">
+<!--Fonts and things-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    
+</head>
+
+<body onload="attractionPage()">
+    <!--Header-->
+    <div id="header" class="row justify-content-between blueGrey">
+        <a href="../HTML/Index.html" id="headerLogo" class="col-2 row justify-content-center align-self-start">
+            <div id="logoImg">
+                <img src="../Content/PageLogo.png" alt="">
+            </div>
+            <div id="homeLink" class="align-self-center text-center">
+                <h1>Home</h1> 
+            </div>           
+        </a>
+        <div id="navMenu" class="col-8 row justify-content-center align-items-end text-center">
+            <div id="navLink1" class="col-3">
+                <a href="../HTML/History.html">                
+                    <h1>History</h1>
+                </a>
+            </div>
+            <div id="navLink2" class="col-3">
+                <a href="../HTML/Attractions.html">
+                    <h1>Attractions</h1>
+                </a>
+            </div>
+            <div id="navLink3" class="col-3">
+                <a href="../HTML/Events.html">                
+                    <h1>Events</h1>
+                </a>
+            </div>
+            <div id="navLink4" class="col-3">
+                <a href="../HTML/Contact.html">                
+                    <h1>Contact</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+
+    <!--Section 1-->    
+    <div id="mapInfo" class="page">
+        <div id="Entertainment" class="tab row justify-content-center">
+            <div id="tabBar1" class="tabBar row justify-content-evenly">
+                <div class="tabSelect col-3 row justify-content-center" onclick="openTab('Entertainment')">
+                    <h1 class="text-center col">Entertainment</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Experiences')">
+                    <h1 class="text-center col">Experiences</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Reserves')">
+                    <h1 class="text-center col">Reserves</h1>
+                </div>
+            </div>
+            <div id="bpc1Box" class="col-2">
+                <div id="bpc1Info" class="row justify-content-center">
+                    <div id="bpc1Title" class="col-12 justify-content-center">
+                        <h1>Entertainment</h1>
+                    </div>
+                    <div id="bpc1It1" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap', 35)">
+                            <div id="bpc1It1Img" class="col-5">
+                                <img src="../Content/Images/a1.png" alt="Logo">
+                            </div>
+                            <div id="bpc1It1Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Rainbow's End</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>New Zealand's Premier Theme Park</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc1It2" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap', 37)">
+                            <div id="bpc1It2Img" class="col-5">
+                                <img src="../Content/Images/a2.png" alt="Formula 1 Car">
+                            </div>
+                            <div id="bpc1It2Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Formula Challenge</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>See what it feels like to drive a real F1 car around a track</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc1It3" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc1It3Img" class="col-5">
+                                <img src="../Content/Images/a3.png" alt="Seals in water">
+                            </div>
+                            <div id="bpc1It3Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Seal Swim</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Located in Kaikoura, A great place to experience cute seals!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc1It4" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc1It4Img" class="col-5">
+                                <img src="../Content/Images/a4.png" alt="Haunted House">
+                            </div>
+                            <div id="bpc1It4Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Fear Factory</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Get your spook on at this haunted house located in Queenstown</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Experiences" class="tab row justify-content-center">
+            <div id="tabBar2" class="tabBar row justify-content-evenly">
+                <div class="col-3 row justify-content-center" onclick="openTab('Entertainment')">
+                    <h1 class="text-center col">Entertainment</h1>
+                </div>
+                <div class="tabSelect col-3 row justify-content-center" onclick="openTab('Experiences')">
+                    <h1 class="text-center col">Experiences</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Reserves')">
+                    <h1 class="text-center col">Reserves</h1>
+                </div>
+            </div>
+            <div id="bpc2Box" class="col-2">
+                <div id="bpc2Info" class="row justify-content-center">
+                    <div id="bpc2Title" class="col-12 justify-content-center">
+                        <h1>Experiences</h1>
+                    </div>
+                    <div id="bpc2It1" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It1Img" class="col-5">
+                                <img src="../Content/Images/b1.png" alt="Lake view with trees">
+                            </div>
+                            <div id="bpc2It1Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Northland Experiences</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Tour NZ's Northland and see what it has to offer!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc2It2" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It2Img" class="col-5">
+                                <img src="../Content/Images/b2.png" alt="Woman playing Cricket">
+                            </div>
+                            <div id="bpc2It2Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Cricket Experiences NZ</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Ever wanted to play a game with the pros? Now you can</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc2It3" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It3Img" class="col-5">
+                                <img src="../Content/Images/b3.png" alt="Bike Trail">
+                            </div>
+                            <div id="bpc2It3Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Outback Experiences</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Get down and dirty with the farming and countryside tour of NZ!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc2It4" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It4Img" class="col-5">
+                                <img src="../Content/Images/b4.png" alt="lake surrounded by mountains">
+                            </div>
+                            <div id="bpc2It4Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Envy Experiences</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Experience the amazing views while travelling in comfort!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Reserves" class="tab row justify-content-center">
+            <div id="tabBar3" class="tabBar row justify-content-evenly">
+                <div class="col-3 row justify-content-center" onclick="openTab('Entertainment')">
+                    <h1 class="text-center col">Entertainment</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Experiences')">
+                    <h1 class="text-center col">Experiences</h1>
+                </div>
+                <div class="tabSelect col-3 row justify-content-center" onclick="openTab('Reserves')">
+                    <h1 class="text-center col">Reserves</h1>
+                </div>
+            </div>
+            <div id="bpc3Box" class="col-2">
+                <div id="bpc3Info" class="row justify-content-center">
+                    <div id="bpc3Title">
+                        <h1>Nature Reserves</h1>
+                    </div>
+                    <div id="bpc3It1" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It1Img" class="col-5">
+                                <img src="../Content/Images/c1.png" alt="Sub Tropical Forest">
+                            </div>
+                            <div id="bpc3It1Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Withiel Thomas Reserve</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Located in Auckland, a small piece of the wild</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc3It2" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It2Img" class="col-5">
+                                <img src="../Content/Images/c2.png" alt="sea turtle swimming">
+                            </div>
+                            <div id="bpc3It2Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Tauparikaka Marine Reserve</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Go Scuba diving with our native fish!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc3It3" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It3Img" class="col-5">
+                                <img src="../Content/Images/c3.png" alt="farming shed on wide field">
+                            </div>
+                            <div id="bpc3It3Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Hinewai Reserve</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Amazing open farmland and natural bush</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc3It4" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It4Img" class="col-5">
+                                <img src="../Content/Images/c4.png" alt="octopus on a rock">
+                            </div>
+                            <div id="bpc3It4Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Taupae Marine Reserve</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Go Scuba diving with our native fish!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapMap" class="page">
+        <div id="pc1Info" class="row justify-content-center">
+            <div id="mapid" class="col-5">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer" class="row justify-content-end blueGrey">
+        <div id="socialLinks1" class="col-3 row justify-content-center">
+            <div id="sl1Link1" class="col">
+                <a href="http://www.facebook.com"><img src="../Content/icoFacebook.png" alt="Facebook Logo"></a>
+            </div>
+            <div id="sl1Link2" class="col">
+                <a href="http://www.Instagram.com"><img src="../Content/icoInsta.png" alt="Instagram Logo"></a>
+            </div>
+            <div id="sl1Link3" class="col">
+                <a href="http://www.Twitter.com"><img src="../Content/icoTwitter.png" alt="Twitter Logo"></a>
+            </div>
+            <div id="sl1Link4" class="col-3">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="../Scripts/JS1.js"></script>
+</body>
+
+
+</html>

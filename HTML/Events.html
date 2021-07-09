@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en-NZ">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style1.css">
+<!--Fonts and things-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+</head>
+
+<body onload="eventPage()">
+    <!--Header-->
+    <div id="header" class="row justify-content-between blueGrey">
+        <a href="../HTML/Index.html" id="headerLogo" class="col-2 row justify-content-center align-self-start">
+            <div id="logoImg">
+                <img src="../Content/PageLogo.png" alt="Logo">
+            </div>
+            <div id="homeLink" class="align-self-center text-center">
+                <h1>Home</h1> 
+            </div>           
+        </a>
+        <div id="navMenu" class="col-8 row justify-content-center align-items-end text-center">
+            <div id="navLink1" class="col-3">
+                <a href="../HTML/History.html">                
+                    <h1>History</h1>
+                </a>
+            </div>
+            <div id="navLink2" class="col-3">
+                <a href="../HTML/Attractions.html">
+                    <h1>Attractions</h1>
+                </a>
+            </div>
+            <div id="navLink3" class="col-3">
+                <a href="../HTML/Events.html">                
+                    <h1>Events</h1>
+                </a>
+            </div>
+            <div id="navLink4" class="col-3">
+                <a href="../HTML/Contact.html">                
+                    <h1>Contact</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+
+
+    <!--Section 1-->    
+    <div id="mapInfo" class="page">
+        <div id="Music" class="tab row justify-content-center">
+            <div id="tabBar1" class="tabBar row justify-content-evenly">
+                <div class="tabSelect col-3 row justify-content-center" onclick="openTab('Music')">
+                    <h1 class="text-center col">Music</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Cultural')">
+                    <h1 class="text-center col">Cultural</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Sporting')">
+                    <h1 class="text-center col">Sporting</h1>
+                </div>
+            </div>
+            <div id="bpc1Box" class="col-2 events">
+                <div id="bpc1Info" class="row justify-content-center">
+                    <div id="bpc1Title" class="col-12 justify-content-center">
+                        <h1>Music</h1>
+                    </div>
+                    <div id="bpc1It1" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc1It1Img" class="col-5">
+                                <img src="../Content/Images/d1.png" alt="Splore Festival">
+                            </div>
+                            <div id="bpc1It1Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Splore Festival</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>A 3 day festival on the beach!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc1It2" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc1It2Img" class="col-5">
+                                <img src="../Content/Images/d2.png" alt="Festival One">
+                            </div>
+                            <div id="bpc1It2Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Festival One</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Christian Music festival over 3 Amazing days</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc1It3" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc1It3Img" class="col-5">
+                                <img src="../Content/Images/d3.png" alt="Rhythm and Vines">
+                            </div>
+                            <div id="bpc1It3Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Rhythm and Vines</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>See all your  favourite DJs and ring in the New Year!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc1It4" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc1It4Img" class="col-5">
+                                <img src="../Content/Images/d4.png" alt="Jim Beam Homegrown">
+                            </div>
+                            <div id="bpc1It4Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Jim Beam Homegrown</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Home for Up and Coming Musicians to play!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Cultural" class="tab row justify-content-center">
+            <div id="tabBar2" class="tabBar row justify-content-evenly">
+                <div class="col-3 row justify-content-center" onclick="openTab('Music')">
+                    <h1 class="text-center col">Music</h1>
+                </div>
+                <div class="tabSelect col-3 row justify-content-center" onclick="openTab('Cultural')">
+                    <h1 class="text-center col">Cultural</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Sporting')">
+                    <h1 class="text-center col">Sporting</h1>
+                </div>
+            </div>
+            <div id="bpc2Box" class="col-2 events">
+                <div id="bpc2Info" class="row justify-content-center">
+                    <div id="bpc2Title" class="col-12 justify-content-center">
+                        <h1>Cultural</h1>
+                    </div>
+                    <div id="bpc2It1" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It1Img" class="col-5">
+                                <img src="../Content/Images/e1.png" alt="Hot Air Balloons">
+                            </div>
+                            <div id="bpc2It1Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Balloons over Waikato</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Lots of colourful Hot Air Balloons in the sky!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc2It2" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It2Img" class="col-5">
+                                <img src="../Content/Images/e2.png" alt="Hobbiton">
+                            </div>
+                            <div id="bpc2It2Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Hobbiton Tours</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Experience the set where The Hobbit was filmed, right here in NZ!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc2It3" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It3Img" class="col-5">
+                                <img src="../Content/Images/e3.png" alt="Art Deco Buildings">
+                            </div>
+                            <div id="bpc2It3Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Art Deco Weekend</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Architecture and the 1930s combine for a great weekend</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc2It4" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc2It4Img" class="col-5">
+                                <img src="../Content/Images/e4.png" alt="Arts Fashion show">
+                            </div>
+                            <div id="bpc2It4Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>W.O.W.A @ Te Papa Museum</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Part Fashion show, Part Art Gallery. World of Wearable Arts.</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Sporting" class="tab row justify-content-center">
+            <div id="tabBar3" class="tabBar row justify-content-evenly">
+                <div class="col-3 row justify-content-center" onclick="openTab('Music')">
+                    <h1 class="text-center col">Music</h1>
+                </div>
+                <div class="col-3 row justify-content-center" onclick="openTab('Cultural')">
+                    <h1 class="text-center col">Cultural</h1>
+                </div>
+                <div class="tabSelect col-3 row justify-content-center" onclick="openTab('Sporting')">
+                    <h1 class="text-center col">Sporting</h1>
+                </div>
+            </div>
+            <div id="bpc3Box" class="col-2 events">
+                <div id="bpc3Info" class="row justify-content-center">
+                    <div id="bpc3Title">
+                        <h1>Sporting</h1>
+                    </div>
+                    <div id="bpc3It1" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It1Img" class="col-5">
+                                <img src="../Content/Images/f1.png" alt="ASB Tennis Arena">
+                            </div>
+                            <div id="bpc3It1Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>ASB Tennis Arena</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>See the world's tennis players clash in this famous arena!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc3It2" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It2Img" class="col-5">
+                                <img src="../Content/Images/b2.png" alt="Seddon Park Cricket">
+                            </div>
+                            <div id="bpc3It2Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Seddon Park</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>World Famous Cricket grounds, right here in NZ!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc3It3" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It3Img" class="col-5">
+                                <img src="../Content/Images/f3.png" alt="ASB Sports Center Wellington">
+                            </div>
+                            <div id="bpc3It3Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>ASB Sports Center</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>NZ's Premier Basketball and Netball center</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bpc3It4" class="attItem row col-8 justify-content-evenly">
+                        <a class="col-12 row" onclick="openPage('mapMap')">
+                            <div id="bpc3It4Img" class="col-5">
+                                <img src="../Content/Images/f4.png" alt="Lancaster Park Rugby">
+                            </div>
+                            <div id="bpc3It4Content" class="col-7">
+                                <div class="attTitle">
+                                    <h1>Lancaster Park Stadium</h1>
+                                </div>
+                                <div class="attTxt">
+                                    <h3>Watch as world famous rugby teams battle it out at Lancaster Park!</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapMap" class="page">
+        <div id="pc1Info" class="row justify-content-center">
+            <div id="mapid" class="col-5">
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div id="footer" class="row justify-content-end blueGrey">
+        <div id="socialLinks1" class="col-3 row justify-content-center">
+            <div id="sl1Link1" class="col">
+                <a href="http://www.facebook.com"><img src="../Content/icoFacebook.png" alt="Facebook Logo"></a>
+            </div>
+            <div id="sl1Link2" class="col">
+                <a href="http://www.Instagram.com"><img src="../Content/icoInsta.png" alt="Instagram Logo"></a>
+            </div>
+            <div id="sl1Link3" class="col">
+                <a href="http://www.Twitter.com"><img src="../Content/icoTwitter.png" alt="Twitter Logo"></a>
+            </div>
+            <div id="sl1Link4" class="col-3">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="../Scripts/JS1.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+    <meta charset="utf-8"/>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style1.css">
+<!--Fonts and things-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <!--Header-->
+    <div id="header" class="row justify-content-between blueGrey">
+        <a href="../HTML/Index.html" id="headerLogo" class="col-2 row justify-content-center align-self-start">
+            <div id="logoImg">
+                <img src="../Content/PageLogo.png" alt="">
+            </div>
+            <div id="homeLink" class="align-self-center text-center">
+                <h1>Home</h1> 
+            </div>           
+        </a>
+        <div id="navMenu" class="col-8 row justify-content-center align-items-end text-center">
+            <div id="navLink1" class="col-3">
+                <a href="../HTML/History.html">                
+                    <h1>History</h1>
+                </a>
+            </div>
+            <div id="navLink2" class="col-3">
+                <a href="../HTML/Attractions.html">
+                    <h1>Attractions</h1>
+                </a>
+            </div>
+            <div id="navLink3" class="col-3">
+                <a href="../HTML/Events.html">                
+                    <h1>Events</h1>
+                </a>
+            </div>
+            <div id="navLink4" class="col-3">
+                <a href="../HTML/Contact.html">                
+                    <h1>Contact</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+    <!--Section 1-->    
+    <div id="pageContent1" class="row justify-content-center">
+        <div id="cpc1Box" class="col-2">
+            <div id="pc1Info">
+                <div id="pc1Title">
+                    <h1>Get in Touch</h1>
+                </div>
+                <form name="contact" onsubmit="return validateForm()">
+                    <div class="col-12 row justify-content-center">
+                        <div id="email" class="col-7">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="emailInput" placeholder="name@example.com">
+                        </div>
+                        <div id="comment" class="col-7">
+                            <label for="textInput" class="form-label">Let us know how we can help!</label>
+                            <textarea class="form-control" id="textInput" rows="4"></textarea>
+                        </div>
+                        <div id="button" class="col-7 text-center">
+                            <input type="submit" class="btn btn-secondary">
+                            <h5 id="emailFalse">Please input a valid Email</h5>
+                            <h5 id="textFalse">Please fill in the Question Box</h5>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer" class="row justify-content-end blueGrey">
+        <div id="socialLinks1" class="col-3 row justify-content-center">
+            <div id="sl1Link1" class="col">
+                <a href="http://www.facebook.com"><img src="../Content/icoFacebook.png" alt="Facebook Logo"></a>
+            </div>
+            <div id="sl1Link2" class="col">
+                <a href="http://www.Instagram.com"><img src="../Content/icoInsta.png" alt="Instagram Logo"></a>
+            </div>
+            <div id="sl1Link3" class="col">
+                <a href="http://www.Twitter.com"><img src="../Content/icoTwitter.png" alt="Twitter Logo"></a>
+            </div>
+            <div id="sl1Link4" class="col-3">
+            </div>
+        </div>
+    </div>
+    <script src="../Scripts/JS1.js"></script>
+</body>
+
+
+
+</html>

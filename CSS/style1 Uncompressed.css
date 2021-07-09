@@ -1,0 +1,641 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+a:hover{
+    color: white;
+}
+
+/*----------------Colour Classes------------------*/
+
+.blueGrey{
+    background-color: #333342;
+}
+
+/*-------------------------------*/
+/*----------------Property Classes------------------*/
+
+.noPad{
+    padding: 0px !important; 
+}
+
+
+/*-------------------------------*/
+#header{
+    color: #ffffff;
+}
+
+#headerLogo{
+    margin: 0% 3%;
+}
+
+#headerLogo img, #headerLogo h1{
+    color: #ffffff;
+    max-width: 20vh;
+    display: block;
+    margin: auto;
+    transition:opacity 0.2s ease-out;
+}
+
+#homeLink{
+    position: absolute;
+    width: max-content;
+    margin: auto;
+}
+
+#homeLink h1{
+    opacity: 0%;
+}
+
+#headerLogo:hover img{
+    opacity: 25%;
+    transition: 0.1s;
+}
+
+#headerLogo:hover h1{
+    opacity: 100%;
+}
+
+
+
+#navMenu div{
+    border-radius: 79% 79% 0% 0%;
+    background-size: auto 400%;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-image: linear-gradient(to bottom, #333342, #333342, #333342, #444442, #CCCCC2, #333342, #333342);
+    transition: 0.3s;
+}
+#navMenu div:hover{
+    background-position: bottom;
+}
+#navLink1{
+    color: #ffffff;
+}
+#navLink2{
+    color: #ffffff;
+}
+#navLink3{
+    color: #ffffff;
+}
+#navLink4{
+    color: #ffffff;
+}
+
+
+
+
+/*------------------------------*/
+
+#slideShow1{
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+#slideShow1 h1{
+    opacity: 0%;
+    z-index: 100;
+    transform: scale(2);
+    transition: transform 0.2s, opacity 0.5s ease-out;
+}
+#slideShow1 img{
+    transition: transform 0.3s, opacity 0.5s ease-out;
+}
+#slice1{
+    color: whitesmoke;
+    overflow: hidden;
+}
+#s1Txt{
+    position: absolute; 
+    width: max-content;
+}
+
+#s1Slide img{
+    vertical-align: middle;
+    width: 100%;
+}
+#s1sImg1{
+    display: block;
+}
+#s1sImg2{
+    display: none;
+}
+#s1sImg3{
+    display: none;
+}
+
+
+#slice2{
+    color: whitesmoke;
+    overflow: hidden;
+}
+#s2Txt{
+    position: absolute;
+    width: max-content;
+}
+
+#s2Slide img{
+    vertical-align: middle;
+    width: 100%;
+}
+#s2sImg1{
+    display: block;
+}
+
+#s2sImg2{
+    display: none;
+}
+#s2sImg3{
+    display: none;
+}
+
+
+#slice3{
+    color: whitesmoke;
+    overflow: hidden;
+}
+#s3Txt{
+    position: absolute;
+    width: max-content;
+}
+
+#s3Slide img{
+    vertical-align: middle;
+    width: 100%;
+}
+#s3sImg1{
+    display: block;
+}
+
+#s3sImg2{
+    display: none;
+}
+#s3sImg3{
+    display: none;
+}
+
+/*--------------Slideshow area------------------*/
+
+
+#slice1:hover img, #slice2:hover img, #slice3:hover img{
+    transform: scale(1.05);
+    opacity: 60%;
+}
+#slice1:hover h1, #slice2:hover h1, #slice3:hover h1{
+    transform: scale(1.2);
+    opacity: 100%;
+    color: white;
+}
+
+/*------------------Homepage THings------------------------*/
+
+
+.skew{
+    transform: skewX(45deg);
+}
+.skewfix{
+    transform: skewX(-45deg);
+}
+#apageContent1{
+    color: #333333;
+}
+#apc1Box{
+    color: #333333;
+    background-image: url(../Content/Images/10.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100vw;
+    margin: 1vw 1vw 0.5vw;
+}
+
+#apc1Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    top:10%;
+    margin: auto;
+    position: relative;
+}
+#apc1Title{
+    color: #ffffff;
+    text-align: center;
+    top:15%;
+    position: relative;    
+    width: 75%;
+    margin: auto;
+    
+}
+#apc1Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+
+#apageContent2{
+    color: #333333;
+}
+#apc2Box{
+    color: #333333;
+    background-image: url(../Content/Images/11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100vw;
+    margin: 0.5vw 1vw 1vw;
+}
+
+#apc2Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    top:10%;
+    margin: auto;
+    position: relative;
+}
+#apc2Title{
+    color: #ffffff;
+    text-align: center;
+    top:15%;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    
+}
+#apc2Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+/*------------------History------------------------*/
+
+
+#pc1Box{
+    color: #333333;
+    background-image: url(../Content/Images/2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    width: 100vw;
+    margin: 0vw 1vw 0.5vw;
+    overflow: hidden;
+}
+
+#pc1Info{
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#pc1Title{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5%;  
+    width: 75%;
+    margin: auto;
+    
+}
+#pc1Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50vh;
+}
+
+
+
+#pc2Box{
+    color: #333333;
+    background-image: url(../Content/Images/3.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    width: 100vw;
+    margin: 0.5vw 1vw 1vw;
+    overflow: hidden;
+}
+
+#pc2Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#pc2Title{
+    color: #ffffff;
+    text-align: center;
+    top:15%;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    
+}
+#pc2Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50vh;
+}
+
+
+
+#pc3Box{
+    color: #333333;
+    background-image: url(../Content/Images/4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: fit-content;
+    width: 100vw;
+    margin: 0vw 1vw 1vw;
+    overflow: hidden;
+}
+
+#pc3Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#pc3Title{
+    color: #ffffff;
+    text-align: center;
+    top:15%;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    
+}
+#pc3Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50vh;
+}
+
+/*------------------Attractions/Events------------------------*/
+.tabBar div:hover{
+    cursor: pointer;
+}
+.tabBar{
+    color: whitesmoke;
+    background: #2b2b38;
+    text-decoration: none;
+}
+.tabSelect{
+    color: whitesmoke;
+    background: #444453;
+}
+
+.tabBar div:hover{
+    background: #515164;
+}
+
+#Entertainment, #Music{
+    display: flex;
+}
+#Experiences, #Reserves, #Cultural, #Sporting{
+    display: none;
+}
+
+#bpc1Box{
+    color: #333333;
+    background-image: url(../Content/Images/8.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: max-content;
+    width: 100vw;
+}
+
+#bpc1Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;    
+    padding-bottom: 25px;
+}
+#bpc2It1Content{
+    text-decoration: none;
+}
+#bpc1Title{
+    color: #ffffff;      
+    text-align: center;
+    padding: 6%; 
+}
+
+
+.attItem{
+    height: max-content;
+    box-shadow: 0 4px 6px rgba(50,50,93,.80), 0 1px 3px rgba(0,0,0,.80);
+    margin: 5%;
+    padding: 10px;
+    text-decoration: none;
+}
+.attItem img{
+    display:block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.attTitle{
+    color: #ffffff;
+    text-align: center;
+    top:15%;
+    position: relative;    
+    width: 75%;
+    margin: auto;        
+}
+.attTxt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.attItem:hover{
+    background-color: rgba(51, 51, 50, 0.20);
+    box-shadow: inset 0 8px 12px rgba(50,50,93,.80), inset 0 2px 6px rgba(0,0,0,.80);
+}
+
+
+
+#bpc2Box{
+    color: #333333;
+    background-image: url(../Content/Images/8.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: max-content;
+    width: 100vw;
+}
+
+#bpc2Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#bpc2Title{
+    color: #ffffff;
+    text-align: center; 
+    padding: 6%;  
+}
+#bpc2Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+
+
+#bpc3Box{
+    color: #333333;
+    background-image: url(../Content/Images/8.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: max-content;
+    width: 100vw;
+}
+
+#bpc3Info{
+    color: #333333;
+    background-color: rgba(51, 51, 50, 0.75);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+#bpc3Title{
+    color: #ffffff;  
+    text-align: center;
+    padding: 6%; 
+}
+#bpc3Txt{
+    color: #FFFFFF;
+    text-align: center;
+    top: 25%;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.events{
+    background-image: url(../Content/Images/7.png) !important;
+}
+/*------------------Map Stuff-------------------------*/
+
+#mapInfo{
+    display: block;
+}
+
+#mapMap{
+    color: whitesmoke;
+    background-image: url(../Content/Images/10.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100vw;
+    display:none
+}
+#mapid{
+    height: 100%;
+    width: 80%;
+    opacity: 80%;
+}
+
+/*------------------Contact-------------------------*/
+
+#cpc1Box{
+    color: whitesmoke;
+    background-image: url(../Content/Attraction1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100vw;
+}
+#email{
+    margin: 5%;
+}
+#button{
+    margin: 5%;
+}
+
+#emailFalse, #textFalse{
+    display: none;
+}
+
+
+/*------------------Footer-------------------------*/
+
+
+#footer{
+    height: 10vh;
+    color: #333333;
+}
+#footer img{
+    width: 90%;
+    padding: 25% 5%;
+    color: #333333;
+}
+
+#contactLink1 {
+    color: #ffffff;
+}
+
+#socialLinks1{
+    color: #ffffff;
+}
+#sl1Link1{
+    color: #ffffff;
+}
+#sl1Link2{
+    color: #ffffff;
+}
+#sl1Link3{
+    color: #ffffff;
+}
+#sl1Link4{
+    color: #ffffff;
+}
