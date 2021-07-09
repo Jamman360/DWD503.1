@@ -11,21 +11,17 @@ All other site images are free for use without attribution.
 Logo was designed and drawn by me.
 
 
-Validation Evidence:
-Index.html
- 
+Validation Successes:
 
-History.html
- 
+Index.html 
 
-Attractions.html
- 
+History.html 
+
+Attractions.html 
 
 Events.html
  
-
-Contact.html
- 
+Contact.html 
 
 style1.css
  
